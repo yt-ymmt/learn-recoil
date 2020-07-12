@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-type Porps = {
+type Props = {
     children: React.ReactNode;
 };
 
@@ -8,19 +8,27 @@ type State = {
     hasError: boolean;
 };
 
-export default class ErrorBoundary extends Component<Porps, State> {
-    state = { hasError: false };
+class ErrorBoundary extends Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
+        this.state = { hasError: false };
+    }
 
     static getDerivedStateFromError() {
-        return {
-            hasError: true,
-        };
+        return { hasError: true };
+    }
+
+    componentDidCatch(error: any, errorInfo: any) {
+        console.log(error, errorInfo);
     }
 
     render() {
         if (this.state.hasError) {
-            return <p>Error.</p>;
+            return <h1>Something went wrong.</h1>;
         }
+
         return this.props.children;
     }
 }
+
+export default ErrorBoundary;

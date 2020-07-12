@@ -19,12 +19,14 @@
         "react-dom": "^16.13.1",
         "react-router": "^6.0.0-beta.0",
         "react-router-dom": "^6.0.0-beta.0",
+        "recoil": "^0.0.10",
         "styled-components": "^5.1.1"
     },
     "devDependencies": {
         "@types/node": "^14.0.19",
         "@types/react": "^16.9.41",
         "@types/react-dom": "^16.9.8",
+        "@types/recoil": "^0.0.1",
         "@types/styled-components": "^5.1.1",
         "@types/webpack": "^4.41.21",
         "@typescript-eslint/eslint-plugin": "^3.6.0",
@@ -33,6 +35,7 @@
         "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-react": "^7.20.3",
+        "eslint-plugin-react-hooks": "^4.0.7",
         "fork-ts-checker-webpack-plugin": "^5.0.7",
         "html-webpack-plugin": "^4.3.0",
         "jest-dom": "^4.0.0",
