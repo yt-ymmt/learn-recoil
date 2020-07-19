@@ -6,8 +6,8 @@ import Routes from './Router';
 
 const App: FC = () => (
     <StrictMode>
-        <GlobalStyle />
         <RecoilRoot>
+            <GlobalStyle />
             <Routes />
         </RecoilRoot>
     </StrictMode>

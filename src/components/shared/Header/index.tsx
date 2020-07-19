@@ -4,7 +4,6 @@ import Nav from './Nav';
 
 const Header: FC = () => (
     <HeaderStyled>
-        <p>サンプル</p>
         <Nav />
     </HeaderStyled>
 );

@@ -1,9 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    font-size: 10px;
-  }
-`;
+const GlobalStyle = createGlobalStyle``;
 
 export default GlobalStyle;

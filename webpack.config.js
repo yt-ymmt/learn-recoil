@@ -12,6 +12,10 @@ module.exports = {
                     transpileOnly: true,
                 },
             },
+            {
+                test: /\.css$/i,
+                loader: ['style-loader', 'css-loader'],
+            },
         ],
     },
     resolve: {
