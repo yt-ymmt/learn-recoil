@@ -1,5 +1,5 @@
 import React, { FC, Suspense } from 'react';
-import Layout from '../../components/Main';
+import Layout from '../../components/Layout';
 import Counter from '../../components/shared/Counter';
 import ErrorBoundary from '../../components/shared/ErrorBoundary';
 import FontButton from '../../components/shared/FontButton';

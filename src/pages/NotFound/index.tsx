@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import Layout from '../../components/Main';
+import Layout from '../../components/Layout';
 import { Link } from 'react-router-dom';
 
 const NotFoundPage: FC = () => (

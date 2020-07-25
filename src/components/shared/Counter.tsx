@@ -1,21 +1,16 @@
 import React from 'react';
-import { useRecoilState } from 'recoil';
-import { atom } from 'recoil';
-
-const counter = atom({
-    key: 'Counter',
-    default: 0,
-});
+import useClickCount from '../../state/clickCount/useClickCount';
 
 const Counter = () => {
-    const [count, setCount] = useRecoilState(counter);
-    const incrementByOne = () => setCount(count + 1);
+    const { clickCountValue, increment, decrement, reset } = useClickCount();
 
     return (
         <div>
-            Count: {count}
+            Count: {clickCountValue}
             <br />
-            <button onClick={incrementByOne}>increment</button>
+            <button onClick={increment}>increment</button>
+            <button onClick={decrement}>decrement</button>
+            <button onClick={reset}>reset</button>
         </div>
     );
 };

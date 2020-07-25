@@ -1,5 +1,5 @@
 import React, { FC, Suspense } from 'react';
-import Layout from '../../components/Main';
+import Layout from '../../components/Layout';
 import ErrorBoundary from '../../components/shared/ErrorBoundary';
 import TodoList from '../../components/shared/TodoList';
 
