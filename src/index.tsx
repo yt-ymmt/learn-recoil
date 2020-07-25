@@ -1,16 +1,14 @@
-import React, { FC, StrictMode } from 'react';
+import React, { FC } from 'react';
 import ReactDOM from 'react-dom';
 import { RecoilRoot } from 'recoil';
 import GlobalStyle from './GlobalStyle';
-import Routes from './Router';
+import Root from './Root';
 
 const App: FC = () => (
-    <StrictMode>
-        <RecoilRoot>
-            <GlobalStyle />
-            <Routes />
-        </RecoilRoot>
-    </StrictMode>
+    <RecoilRoot>
+        <GlobalStyle />
+        <Root />
+    </RecoilRoot>
 );
 
 ReactDOM.render(<App />, document.getElementById('root'));

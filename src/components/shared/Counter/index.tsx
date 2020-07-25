@@ -1,5 +1,5 @@
 import React from 'react';
-import useClickCount from '../../state/clickCount/useClickCount';
+import useClickCount from '../../../state/clickCount/useClickCount';
 
 const Counter = () => {
     const { clickCountValue, increment, decrement, reset } = useClickCount();
