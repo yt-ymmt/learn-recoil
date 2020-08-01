@@ -35,5 +35,9 @@ module.exports = {
         port: 8000,
         https: true,
         historyApiFallback: true,
+        watchOptions: {
+            poll: 1000,
+            ignored: ['node_modules'],
+        },
     },
 };
