@@ -18,8 +18,8 @@ const Main: FC = ({ children }) => {
 
     return (
         <Layout>
-            <Header>
-                <Logo onClick={handleClickTopButton} />
+            <StyledHeader>
+                <Logo onClick={handleClickTopButton}>Logo</Logo>
                 <Menu
                     theme="dark"
                     defaultSelectedKeys={['/']}
@@ -33,8 +33,8 @@ const Main: FC = ({ children }) => {
                         Todo
                     </Menu.Item>
                 </Menu>
-            </Header>
-            <Layout style={{ padding: '24px' }}>
+            </StyledHeader>
+            <Layout style={{ padding: '32px 50px' }}>
                 <Content>{children}</Content>
             </Layout>
             <Footer style={{ textAlign: 'center' }}>©Yuta Yamamoto</Footer>
@@ -42,13 +42,22 @@ const Main: FC = ({ children }) => {
     );
 };
 
+const StyledHeader = styled(Header)`
+    display: flex;
+    place-content: center flex-start;
+`;
+
 const Logo = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 120px;
-    height: 31px;
-    background: rgba(255, 255, 255, 0.2);
+    height: 32px;
     margin: 16px 28px 16px 0;
-    float: left;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
     cursor: pointer;
+    line-height: 1;
 `;
 
 export default Main;
